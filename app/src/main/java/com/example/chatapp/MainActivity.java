@@ -93,21 +93,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 //
-//        setbut.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, setting.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        cumbut.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-//                startActivityForResult(intent,10);
-//            }
-//        });
+        setbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, settingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cumbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intent,10);
+            }
+        });
 
         if (auth.getCurrentUser() == null){
             Intent intent = new Intent(MainActivity.this,LoginActivity.class);
