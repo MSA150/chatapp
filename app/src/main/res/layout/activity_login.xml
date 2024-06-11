@@ -117,7 +117,7 @@
             android:layout_gravity="center"
             android:paddingTop="10dp"
 android:id="@+id/singuptext"
-            android:text="SING UP"
+            android:text="SIGN UP"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold"

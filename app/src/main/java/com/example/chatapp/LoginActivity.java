@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
                     email.setError("Invalid Email");
                     progressDialog.dismiss();
                 } else if (password.length()<6) {
-                    password.setError("more the sux characters");
+                    password.setError("more the six characters");
                     progressDialog.dismiss();
                 }
                 else {
